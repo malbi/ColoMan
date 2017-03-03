@@ -1,4 +1,5 @@
 #include"menu.h"
+#include"account_management.h"
 
 int menu(void){
   int choix = 0;
@@ -8,6 +9,7 @@ int menu(void){
     switch(choix){
     case 1 :
       printf("Bienvenue dans la gestion des comptes!\n");
+      account_menu();
       break;
     case 2 :
       printf("2\n");

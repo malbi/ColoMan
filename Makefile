@@ -1,7 +1,8 @@
 CFLAGS = -Wall
 CC = gcc
+OBJ = main.o menu.o account_management.o
 
-ColoMan : main.o menu.o
+ColoMan : $(OBJ)
 	$(CC) $^ -o ColoMan
 
 
